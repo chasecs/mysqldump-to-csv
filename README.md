@@ -63,7 +63,7 @@ ID,JGBM,FZR,FZJG,CZHM,LXDH,JGDM,GFWZ,JGQYCJ,YB,FZSJ,DZYX,DZ,JGMC,JGJC,ZYQY,SJSFX
 
 ## Caustion
 
-When there is any comma embedded in the field data, like `1, 2, 'hello,world', ...`, it may cause problems for CSV parser to handle such field data.
+When fields have commas inside, e.g. `..., 'hello,world', ...`, the CSV parser may fail dealing with these fields.
 
 So, you may need to fix this problem by yourself. 
 
